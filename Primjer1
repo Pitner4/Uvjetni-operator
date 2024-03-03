@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int y = 20;
+
+    // Uvjetni operator
+    int max = (x > y) ? x : y;
+
+    printf("Maksimalna vrijednost od %d i %d je %d.\n", x, y, max);
+
+    return 0;
+}
