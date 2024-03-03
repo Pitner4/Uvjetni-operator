@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int numbers[] = {1, 5, 3, 8, 2, 7, 4};
+    int n = sizeof(numbers) / sizeof(numbers[0]);
+    int max = numbers[0];
+    int min = numbers[0];
+
+    for (int i = 1; i < n; i++) {
+        // Uvjetni operator za pronalaženje maksimalne vrijednosti
+        max = (numbers[i] > max) ? numbers[i] : max;
+
+        // Uvjetni operator za pronalaženje minimalne vrijednosti
+        min = (numbers[i] < min) ? numbers[i] : min;
+    }
+
+    printf("Maksimalna vrijednost je %d.\n", max);
+    printf("Minimalna vrijednost je %d.\n", min);
+
+    return 0;
+}
