@@ -11,3 +11,10 @@ int main() {
 
     return 0;
 }
+
+// Kratko objašnjenje koda:  
+// x > y je uvjet, x je izraz za slučaj kada je uvjet istinit, 
+//a y je izraz za slučaj kada je uvjet lažan. 
+//Operator ? : izračunava x > y i ako je uvjet istinit, vraća vrijednost x. 
+//Ako je uvjet lažan, operator ? : izračunava y i vraća vrijednost y.
+//Kada se program izvrši, printf funkcija će ispisati "Maksimalna vrijednost od 10 i 20 je 20.".
